@@ -1,0 +1,91 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+
+
+\section{Batch Gradient Descent}
+
+\subsection{Definition}
+
+Batch Gradient Descent computes the gradient of the cost function by averaging over the entire training dataset.
+
+\subsection{Advantages}
+
+
+\begin{itemize}
+    \item \textbf{Less noise and randomness since the entire dataset is used}:
+\end{itemize}
+
+\subsection{Disadvantages}
+
+\begin{itemize}
+    \item \textbf{Computationally Intensive (Take a lot of time)} 
+    \item \textbf{High Memory Usage}
+\end{itemize}
+
+\section{Stochastic Gradient Descent (SGD)}
+
+\subsection{Definition}
+
+Stochastic Gradient Descent updates the parameters using the gradient computed from a single randomly selected data point at each iteration.
+
+\subsection{Advantages}
+
+\begin{itemize}
+    \item \textbf{Faster and use less memory Than Batch gradient}
+    \item \textbf{Since it is random it may escape local minima and find the global minima}
+\end{itemize}
+
+\subsection{Disadvantages}
+
+\begin{itemize}
+    \item \textbf{It may not find the global minima}
+    
+\end{itemize}
+
+\newpage
+
+\section{Mini-Batch Gradient Descent}
+
+\subsection{Definition}
+
+Mini-Batch Gradient Descent updates parameters based on the gradient computed from a small batch of the data.
+
+\subsection{Advantages}
+
+\begin{itemize}
+    \item \textbf{Ability to paralleled processing }
+    \item \textbf{more stable than SGD}
+\end{itemize}
+
+\subsection{Disadvantages}
+
+\begin{itemize}
+    \item \textbf{Complex}
+    \item \textbf{it may still need a lot of memory}
+\end{itemize}
+
+\section{Momentum}
+
+\subsection{Definition}
+
+Momentum gradient descent accelerates the optimization process by adding a fraction of the previous update vector to the current update.
+
+\subsection{Advantages}
+
+\begin{itemize}
+    \item \textbf{Faster convergence than standard gradient descent}
+    \item \textbf{Reduces noise and helps escape local minima}
+\end{itemize}
+
+\subsection{Disadvantages}
+
+\begin{itemize}
+    \item \textbf{May not find the global minimum if the momentum term is too large}
+\end{itemize}
+
+\end{document} 
